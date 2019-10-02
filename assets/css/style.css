@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    color: #E6644C;
+    text-decoration: none;
+}
+
+html {
+    height: 100%;
+    overflow-x: hidden;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    height: 100%;
+    color: rgb(12, 12, 12);
+}
+
+.main-wrapper {
+    min-height: 100%;
+    display: flex;
+}
+
+/* sidebar */
+.sidebar {
+    width: 300px;
+    min-height: 100vh;
+    background-color: #E6644C;
+}
+
+.sidebar a {
+    color: #FFF;
+}
+
+.sidebar .nav-logo {
+    background-color: #DD4F34;
+    padding: 8px 16px;
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 32px;
+    position: relative;
+}
+
+.sidebar .nav-menu {
+    padding: 4px 16px;
+    border-bottom: 1px solid #FFF;
+    display: block;
+}
+
+.sidebar .nav-menu .nav-link {
+    padding: 4px 0;
+}
+
+.nav-menu .menu-icon {
+    margin-right: 8px;
+}
+
+.sidebar .nav-menu .dropdown-menu {
+    position: relative !important;
+    background-color: transparent;
+    border: none;
+    transform: none !important;
+    padding: 0;
+}
+
+/* header nav */
+.header-nav {
+    padding: 13px 0;
+    border-bottom: 1px solid #E6644C;
+    width: 100%;
+}
+
+.sidebar-toggler {
+    color: #E6644C;
+    font-size: 24px;
+    border: 1px solid #E6644C;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: background-color 0.5s;
+}
+
+.sidebar-toggler:hover, .sidebar-toggler.active {
+    color: #FFF;
+    background-color: #E6644C;
+}
+
+.sidebar-close {
+    display: none;
+}
+
+/* content */
+.content-wrapper {
+    display: inline-block;
+    padding: 0 16px;
+    width: 100%;
+}
+
+/* footer */
+.footer-wrapper {
+    background-color: #DD4F34;
+    color: #FFF;
+    padding: 4px 16px;
+    text-align: center;
+}
+
+@media (max-width: 575.98px) {
+
+}
+
+@media (max-width: 767.98px) {
+    .sidebar {
+        position: fixed;
+        z-index: 999;
+    }
+
+    .sidebar .nav-logo {
+        text-align: left;
+    }
+
+    .sidebar-close {
+        display: inline-block;
+        position: absolute;
+        right: 1rem;
+        top: 50%;
+        transform: translateY(-50%);
+    }
+}
+
+@media (max-width: 991.98px) {
+    
+}
